@@ -1,0 +1,14 @@
+# 真实 GPS 轨迹，含个人位置，只留本机
+tracks/
+
+# 本机私有笔记（IMEI 等），Claude Code 会自动读取
+CLAUDE.local.md
+
+# coolwatcher 运行时状态（窗口布局、命令历史）
+tools/coolwatcher/usr/bin/profiles/*.cwh
+tools/coolwatcher/usr/bin/profiles/*.cws
+
+# Python
+__pycache__/
+
+.DS_Store

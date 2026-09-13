@@ -1,0 +1,7 @@
+[submodule "GPRS_C_SDK"]
+	path = GPRS_C_SDK
+	url = https://github.com/Ai-Thinker-Open/GPRS_C_SDK.git
+	ignore = dirty
+[submodule "GPRS_CSDTK"]
+	path = GPRS_CSDTK
+	url = https://github.com/Ai-Thinker-Open/GPRS_CSDTK.git
