@@ -78,6 +78,7 @@ cd tools/coolwatcher/usr/bin && ./coolwatcher &
 cd web-viewer && pnpm dev      # http://localhost:5173
 ```
 
+- **在线版**：推送到 GitHub 后由 `.github/workflows/pages.yml` 自动部署到 GitHub Pages（改动 `web-viewer/**` 时触发，也可在 Actions 页手动运行）。`vite.config.ts` 的 `base` 读环境变量 `BASE_PATH`，工作流里设成 `/<仓库名>/`，本地开发不受影响。
 - 上传 `/gps/*.csv`（可多选，按时间合并），也可以点"示例轨迹"：每次随机挑一个公开地标附近的起点，生成随机环线，不含任何真实位置。
 - 功能：地图轨迹（按速度/HDOP/卫星数上色）、统计（点数、时长、里程、散布）、按卫星数和 HDOP 筛选、按时间回放（1×~300×，自动跳过断点）、逐点查看。
 - 底图默认高德，坐标用 `gcoord` 从 WGS84 转成 GCJ-02；切到 OSM 时不转换。
